@@ -1,0 +1,28 @@
+PODS:
+  - GPUImage (0.1.7)
+  - IQKeyboardManagerSwift (6.2.0)
+  - SwiftOCR (1.1):
+    - GPUImage
+  - Toaster (2.1.1)
+
+DEPENDENCIES:
+  - IQKeyboardManagerSwift
+  - SwiftOCR
+  - Toaster
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - GPUImage
+    - IQKeyboardManagerSwift
+    - SwiftOCR
+    - Toaster
+
+SPEC CHECKSUMS:
+  GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
+  IQKeyboardManagerSwift: b07ccf9d8cafe993dcd6cb794eb4ba34611a0c4e
+  SwiftOCR: e1a5c7582f074b54df2b1ad273983088b3cf5d45
+  Toaster: a6c9532de1ded8105e77376f7dffeb2e12b46dbb
+
+PODFILE CHECKSUM: 9f3fbc622b4cb8e7ab38313ba2c980767e57d1cd
+
+COCOAPODS: 1.6.0

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CustomMyWorkTVC" id="KGk-i7-Jjw" customClass="CustomMyWorkTVC" customModule="All_Scan" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="99.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jo1-aI-YfZ" customClass="View" customModule="All_Scan" customModuleProvider="target">
+                        <rect key="frame" x="5" y="5" width="310" height="89.5"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E8l-Sv-Baq" customClass="View" customModule="All_Scan" customModuleProvider="target">
+                                <rect key="frame" x="5" y="5" width="80" height="80"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sqs-w1-Ykh" customClass="ImageView" customModule="All_Scan" customModuleProvider="target">
+                                        <rect key="frame" x="2" y="2" width="76" height="76"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="sqs-w1-Ykh" firstAttribute="top" secondItem="E8l-Sv-Baq" secondAttribute="top" constant="2" id="DJh-hC-8Xf"/>
+                                    <constraint firstAttribute="height" constant="80" id="EI4-bA-ddm"/>
+                                    <constraint firstAttribute="trailing" secondItem="sqs-w1-Ykh" secondAttribute="trailing" constant="2" id="LLS-hC-VeG"/>
+                                    <constraint firstAttribute="bottom" secondItem="sqs-w1-Ykh" secondAttribute="bottom" constant="2" id="NfL-DP-Xgd"/>
+                                    <constraint firstItem="sqs-w1-Ykh" firstAttribute="leading" secondItem="E8l-Sv-Baq" secondAttribute="leading" constant="2" id="YJ0-6Z-GSq"/>
+                                    <constraint firstAttribute="width" constant="80" id="mgv-kh-zd6"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="applyShadow" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" text="Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu,  as dhaskdhashda afasd fsadf" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="iw8-Wa-kd6" customClass="TextView" customModule="All_Scan" customModuleProvider="target">
+                                <rect key="frame" x="95" y="5" width="205" height="64.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES" calendarEvent="YES" shipmentTrackingNumber="YES" flightNumber="YES" lookupSuggestion="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontTypeAdapter" value="hr"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="31 Jan, 2019 4:00 PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uCF-zD-fb3" customClass="Label" customModule="All_Scan" customModuleProvider="target">
+                                <rect key="frame" x="182.5" y="70.5" width="117.5" height="14"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
+                                <color key="textColor" red="0.60392156862745094" green="0.60392156862745094" blue="0.60392156862745094" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontTypeAdapter" value="hr"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="uCF-zD-fb3" secondAttribute="trailing" constant="10" id="3IQ-JM-vag"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="E8l-Sv-Baq" secondAttribute="bottom" constant="4.5" id="4KO-9a-gpu"/>
+                            <constraint firstItem="E8l-Sv-Baq" firstAttribute="leading" secondItem="Jo1-aI-YfZ" secondAttribute="leading" constant="5" id="ILt-h0-STn"/>
+                            <constraint firstAttribute="trailing" secondItem="iw8-Wa-kd6" secondAttribute="trailing" constant="10" id="NnW-h3-c65"/>
+                            <constraint firstAttribute="bottom" secondItem="uCF-zD-fb3" secondAttribute="bottom" constant="5" id="ajf-xd-HKG"/>
+                            <constraint firstItem="iw8-Wa-kd6" firstAttribute="top" secondItem="Jo1-aI-YfZ" secondAttribute="top" constant="5" id="hGM-68-5sA"/>
+                            <constraint firstItem="iw8-Wa-kd6" firstAttribute="leading" secondItem="E8l-Sv-Baq" secondAttribute="trailing" constant="10" id="tjE-XG-0Pv"/>
+                            <constraint firstAttribute="bottom" secondItem="iw8-Wa-kd6" secondAttribute="bottom" constant="20" id="twl-lc-5V7"/>
+                            <constraint firstItem="E8l-Sv-Baq" firstAttribute="top" secondItem="Jo1-aI-YfZ" secondAttribute="top" constant="5" id="xwZ-fO-GfP"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="applyShadow" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Jo1-aI-YfZ" secondAttribute="trailing" constant="5" id="e1a-f7-S7y"/>
+                    <constraint firstItem="Jo1-aI-YfZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="sgy-SM-JBN"/>
+                    <constraint firstAttribute="bottom" secondItem="Jo1-aI-YfZ" secondAttribute="bottom" constant="5" id="v1d-oV-IdI"/>
+                    <constraint firstItem="Jo1-aI-YfZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="xkO-Nh-Xf4"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="contentTxtView" destination="iw8-Wa-kd6" id="FRh-Ol-Jll"/>
+                <outlet property="durationLbl" destination="uCF-zD-fb3" id="eGX-lF-usE"/>
+                <outlet property="imgView" destination="sqs-w1-Ykh" id="sdW-9E-Qaf"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
